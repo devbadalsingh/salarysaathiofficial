@@ -82,7 +82,7 @@ const LoanCalculate = () => {
                         Short on cash before Salary day?
                         </Typography>
                         <Typography variant="h6" color="inherit" sx={{ mt: 1 }}>
-                        Turn to SalarySathi.com! We’ll provide you with the support you need and get funds in your account in just 5 minutes.                        </Typography>
+                        Turn to SalarySaathi! We’ll provide you with the support you need and get funds in your account in just 5 minutes.                        </Typography>
                     </Paper>
 
                     <Paper
@@ -120,7 +120,7 @@ const LoanCalculate = () => {
                         <Typography variant="h5" fontWeight={550} component="strong" color="inherit" sx={{ mt: 4 }}>
                         Facing mid-month money troubles?                        </Typography>
                         <Typography variant="h6" color="inherit" sx={{ mt: 1 }}>
-                        At SalarySathi.com, we offer quick loans tailored to your needs. Apply now, and receive funds instantly.                        </Typography>
+                        At SalarySaathi, we offer quick loans tailored to your needs. Apply now, and receive funds instantly.                        </Typography>
                     </Paper>
                 </Grid>
 
@@ -162,7 +162,7 @@ const LoanCalculate = () => {
                         Salary not enough to cover unexpected expenses?
                         </Typography>
                         <Typography variant="h6" color="inherit" sx={{ mt: 1 }}>
-                        We’ve got your back! Get a hassle-free loan with SalarySathi.com in minutes—because we believe in helping you stay on track.                        </Typography>
+                        We’ve got your back! Get a hassle-free loan with SalarySaathi in minutes—because we believe in helping you stay on track.                        </Typography>
                     </Paper>
 
                     <Paper
@@ -203,7 +203,7 @@ const LoanCalculate = () => {
 
                         </Typography>
                         <Typography variant="h6" color="inherit" sx={{ mt: 1 }}>
-                        With SalarySathi.com, your loan is just 5 minutes away. Fast, easy, and reliable solutions for when you need it most.                        </Typography>
+                        With SalarySaathi, your loan is just 5 minutes away. Fast, easy, and reliable solutions for when you need it most.                        </Typography>
                     </Paper>
                 </Grid>
             </Grid>

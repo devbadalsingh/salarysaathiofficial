@@ -16,32 +16,32 @@ const cardDetails = [
   {
     imgUrl: image1,
     title: "Quick Approval",
-    description: `We know your time matters! With our friendly financial technology, we’ll check your documents and approve your loan in just minutes. Once you’re approved, the money will land in your account in no time!`,
+    description: `We know your time matters! With our friendly financial technology, we’ll check your documents and approve your loan in just a minutes. `,
   },
   {
     imgUrl: image2,
     title: "Stress-Free Repayment",
-    description: `With options like Easy Pay or Bank Transfer, our flexible repayment plans make it a breeze for you to stay on top of your finances. Enjoy upgrading your lifestyle without the worry of cash flow!`,
+    description: `With options like Easy Pay or Bank Transfer, our flexible repayment plans make it a breeze for you to stay on top of your finances. `,
   },
   {
     imgUrl: image3,
     title: "Clear Pricing",
-    description: `Our interest rates and fees are clear, straightforward, and completely fair—there are no hidden surprises. We aim to make your financial journey as smooth and hassle-free as possible.`,
+    description: `We aim to make your financial journey as smooth and hassle-free as possible.`,
   },
   {
     imgUrl: image4,
     title: "Easy Documentation",
-    description: `Say goodbye to the hassle of paperwork and long trips to the bank. With our fully digital loan process, you can enjoy a quick, straightforward, and stress-free experience from start to finish.`,
+    description: `Say goodbye to the hassle of paperwork and long trips to the bank. `,
   },
   {
     imgUrl: image5,
     title: "Fast Fund Transfer",
-    description: `As soon as your documents are verified and approved, the money will be sent to your account right away. No waiting—just quick financial relief thanks to our advanced technology!`,
+    description: ` No waiting—just quick financial relief thanks to our advanced technology!`,
   },
   {
     imgUrl: image6,
     title: "Secure Process",
-    description: `Your information is in good hands! Our dedicated teams work diligently at every stage to ensure a safe and transparent experience. Your dreams are important to us, and we’ll protect them like our own.`,
+    description: `Your information is in good hands! Our dedicated teams work diligently at every stage to ensure a safe and transparent experience. `,
   },
 ];
 
@@ -87,14 +87,16 @@ function CarouselItemDetail({ imgUrl, imgTitle, description, index }) {
           image={imgUrl}
           alt={imgTitle}
           sx={{
+
             width: "100%",
             height: "100%",
             maxHeight: 150,
-            marginBottom: 13,
+            marginBottom: 10,
+            marginTop:10
           }}
         />
       </Box>
-      <Typography variant="h5" fontWeight="bold" color="white" align="center">
+      <Typography variant="h5" fontWeight="bold" color="white" align="center" >
         {imgTitle}
       </Typography>
       <Box mt={1} textAlign="center">
@@ -103,6 +105,10 @@ function CarouselItemDetail({ imgUrl, imgTitle, description, index }) {
             key={lineIndex}
             color="white"
             sx={{
+              marginBottom: 10,
+              paddingLeft:'30px',
+              paddingRight:'30px',
+
               fontSize: "20px",
               opacity: visibleLines.includes(lineIndex) ? 1 : 0,
               transition: "opacity 0.5s ease",
@@ -176,7 +182,7 @@ export default function AutoplayCarousel() {
           }}
         >
           Is your salary running low before the month ends?
-          Don’t stress – SalarySathi.com is here to help! 
+          Don’t stress – SalarySaathi.com is here to help! 
           Get a quick loan disbursed directly into your account in just 5 minutes.
         </Typography>
 

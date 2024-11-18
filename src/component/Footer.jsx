@@ -1,7 +1,7 @@
 import React from 'react';
 import { Email, Phone, LocationOn, Facebook, Twitter, LinkedIn, Instagram, YouTube } from '@mui/icons-material';
 import { Container, Grid, Typography, Link, Box } from '@mui/material';
-import logo from '../assets/image/WhatsApp_Image_2024-11-08_at_10.51.55_PM-removebg-preview-(1).png';
+import logo from '../assets/image/Salari-Saathi-logo-White.png';
 
 const linkStyle = {
   display: 'flex',

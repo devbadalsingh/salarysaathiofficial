@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
-import backgroundImage from '../assets/image/Frame 501.png';
+import backgroundImage from '../assets/image/Frame 514.png';
 
 const FrontPage = () => {
   const theme = useTheme();
@@ -22,9 +22,9 @@ const FrontPage = () => {
     color: 'white',
     textAlign: 'center',
     padding: theme.spacing(2),
-    height: {xs:'100vh',md:'110vh',sm:'118vh',lg:'107vh'}, // Same height across all screens
+    height: {xs:'100vh',md:'110vh',sm:'118vh',lg:'120vh'}, // Same height across all screens
     '@media (width: 414px) and (height: 896px)': {
-      height: '80vh', // Specific height for iPhone XR
+      height: '85vh', // Specific height for iPhone XR
     },
     '@media (width: 390px) and (height: 844px)': {
       height: '80vh', // Adjusted height for iPhone 12 Pro
@@ -41,7 +41,7 @@ const FrontPage = () => {
     
   }}
 >  {/* Centered Content */}
-      <Box sx={{ mt: -60, [theme.breakpoints.down('sm')]: { mt: -64 } ,
+      <Box sx={{ mt: -75, [theme.breakpoints.down('sm')]: { mt: -64 } ,
       
        '@media (width: 414px) and (height: 896px)': {
         mt: -75, // Specific height for iPhone XR
@@ -73,7 +73,7 @@ const FrontPage = () => {
         <Typography
           variant="h2"
           sx={{
-            mb: 0.5,
+            mb: 0.4,
             fontWeight: 'bold',
             color: '#FFAA00',
             [theme.breakpoints.down('sm')]: {
@@ -91,7 +91,6 @@ const FrontPage = () => {
         </Typography>
       </Box>
 
-      {/* Buttons in a smaller container */}
          {/* Buttons in a smaller container */}
          <Button
         variant="contained"

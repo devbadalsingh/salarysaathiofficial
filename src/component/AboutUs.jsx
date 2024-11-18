@@ -186,7 +186,7 @@ const AboutUs = () => {
             textAlign: 'center',
           }}
         >
-          Welcome to Salarysathi.com, your trusted partner in personal finance solutions. As a premier digital lending platform under SHIVJI FINANCE AND INVESTMENTS PVT LTD
+          Welcome to SalarySaathi, your trusted partner in personal finance solutions. As a premier digital lending platform under SHIVJI FINANCE AND INVESTMENTS PVT LTD
 Limited, we specialize in providing fast, convenient, and short-term unsecured personal loans to salaried individuals across India. Our mission is to empower our customers with access to credit, simplifying the loan process through innovative technology and tailored solutions that meet your unique financial needs.
         </Typography>
         
@@ -209,7 +209,7 @@ Limited, we specialize in providing fast, convenient, and short-term unsecured p
             marginTop: 2,
           }}
         >
-          At Salarysathi.com, we understand that life can be unpredictable whether it’s medical emergencies, wedding expenses, home improvements, we’re here to ensure that financial hurdles don’t hold you back. With our seamless, fully digital platform, you can apply for a loan in minutes, track your application status in real-time, and receive funds directly into your bank account.
+          At SalarySaathi, we understand that life can be unpredictable whether it’s medical emergencies, wedding expenses, home improvements, we’re here to ensure that financial hurdles don’t hold you back. With our seamless, fully digital platform, you can apply for a loan in minutes, track your application status in real-time, and receive funds directly into your bank account.
         </Typography>
       </Box>
  
@@ -318,7 +318,7 @@ Limited, we specialize in providing fast, convenient, and short-term unsecured p
                           textAlign: 'left',
                         }}
                       >
-                        Our vision at Salarysathi.com is to redefine how personal loans are accessed by salaried professionals in India. We aim to create a transparent, customer-centric lending ecosystem that provides access to credit when it’s needed the most. By harnessing cutting-edge technology and leveraging our expertise in financial services, we strive to build a future where financial inclusion is a reality for all, regardless of their income or background.
+                        Our vision at SalarySaathi is to redefine how personal loans are accessed by salaried professionals in India. We aim to create a transparent, customer-centric lending ecosystem that provides access to credit when it’s needed the most. By harnessing cutting-edge technology and leveraging our expertise in financial services, we strive to build a future where financial inclusion is a reality for all, regardless of their income or background.
                       </Typography>
                     </Grid>
 
@@ -459,7 +459,7 @@ Limited, an RBI-registered NBFC (Non-Banking Financial Company), we offer loans 
                           margin: { xs: 0, md: '0 auto' },
                       }}
                   >
-                      salarysaathi.com is powered by a state-of-the-art digital platform that simplifies every step of the loan process. We use advanced algorithms to assess your creditworthiness quickly and accurately, ensuring that you get the best possible loan offers.
+                      SalarySaathi is powered by a state-of-the-art digital platform that simplifies every step of the loan process. We use advanced algorithms to assess your creditworthiness quickly and accurately, ensuring that you get the best possible loan offers.
                   </Typography>
 
                   {/* Top line above Paper */}
@@ -585,7 +585,7 @@ const techItems = [
   },
   {
       title: ' User-Friendly Interface',
-      description: 'Salarysathi offers an intuitive and easy-to-navigate platform, ensuring a smooth loan application process for all users.'
+      description: 'SalarySaathi offers an intuitive and easy-to-navigate platform, ensuring a smooth loan application process for all users.'
   },
   {
       title: ' Real-Time Tracking',

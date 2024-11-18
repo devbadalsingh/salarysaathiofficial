@@ -94,7 +94,7 @@ const Technology = () => {
                     margin: '0 auto',     // Ensure the paragraph is centered
                 }}
             >
-                Salarysathi.com is powered by a state-of-the-art digital platform that simplifies every step of the loan process. We use advanced algorithms to assess your creditworthiness quickly and accurately, ensuring that you get the best possible loan offers. Our technology ensures:
+                SalarySaathi.com is powered by a state-of-the-art digital platform that simplifies every step of the loan process. We use advanced algorithms to assess your creditworthiness quickly and accurately, ensuring that you get the best possible loan offers. Our technology ensures:
             </Typography>
 
             <Box
@@ -214,7 +214,7 @@ const techItems = [
     },
     {
         title: '02/ User-Friendly Interface',
-        description: 'Salarysathi offers an intuitive and easy-to-navigate platform, ensuring a smooth loan application process for all users.'
+        description: 'SalarySaathi offers an intuitive and easy-to-navigate platform, ensuring a smooth loan application process for all users.'
     },
     {
         title: '03/ Real-Time Tracking',

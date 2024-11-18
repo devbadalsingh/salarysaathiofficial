@@ -55,17 +55,79 @@ const ApplyNow = () => {
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
-
-    // Validation for input fields
-    if (name === 'mobile' && !/^\d*$/.test(value)) return;
+    console.log("the pan value is 1",value)
+  
+    // Validation for input fields (only block if invalid input is entered)
+  
+    // Mobile: Only digits and max 10 characters
+    if (name === 'fName' && !/^[A-Za-z\s]*$/.test(value)) return;
+    if (name === 'lName' && !/^[A-Za-z\s]*$/.test(value)) return;
+  
+    if (name === 'mobile' && (!/^\d*$/.test(value) || value.length > 10)) return;
+  
+    // Salary and Loan Amount: Only digits
     if ((name === 'salary' || name === 'loanAmount') && !/^\d*$/.test(value)) return;
+  
+    // PinCode: Only digits and max 6 characters
     if (name === 'pinCode' && (!/^\d*$/.test(value) || value.length > 6)) return;
+  
+    // Aadhaar: Only digits and max 12 characters
     if (name === 'aadhaar' && (!/^\d*$/.test(value) || value.length > 12)) return;
+    
+    //pan validation 
+    if (name === 'pan') {
+      // Convert to uppercase for consistency
+      const panInput = value.toUpperCase();
+  
+      // Allow only up to 10 characters and validate per character
+      if (panInput.length <= 10) {
+          // Regular expression to match PAN format progressively
+          if (
+              /^[A-Z]{0,5}$/.test(panInput) || // First 5 characters must be letters
+              /^[A-Z]{5}\d{0,4}$/.test(panInput) || // Next 4 characters must be digits
+              /^[A-Z]{5}\d{4}[A-Z]?$/.test(panInput) // Last character must be a letter
+          ) {
+              setFormValues({ ...formValues, [name]: panInput });
+              setFormErrors((prevErrors) => ({ ...prevErrors, [name]: '' })); // Clear any error message
+          } else {
+              setFormErrors((prevErrors) => ({
+                  ...prevErrors,
+                  [name]: 'PAN format should be 5 letters, 4 digits, and 1 letter (e.g., ABCDE1234F).',
+              }));
+          }
+      }
+      return; // Prevent further processing if input exceeds 10 characters
+  }
+  
 
+  // validation for dob
+  if (name === 'dob') {
+    const birthDate = new Date(value); // Convert input to a date
+    const today = new Date();
+    const age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+  
+    // Adjust age if the current month and day are before the birth month and day
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+  
+    if (age < 18) {
+      setFormErrors((prevErrors) => ({
+        ...prevErrors,
+        dob: 'You must be at least 18 years old.',
+      }));
+      return; // Prevent updating the value if invalid
+    }
+  }
+  
+
+    console.log("the pan value is ",value)
+    // Update form values and reset errors for the specific field
     setFormValues({ ...formValues, [name]: value });
     setFormErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
   };
-
+  
   const validateForm = () => {
     const errors = {};
     const mobileValid = /^\d{10}$/.test(formValues.mobile);
@@ -220,34 +282,6 @@ const ApplyNow = () => {
         padding: '30px',
       }}
     >
-      {/* Image Section */}
-      <Box 
-        sx={{ 
-          position: 'relative',
-          width: '100%',
-          height: { xs: '20vh', sm: '30vh', md: '40vh', lg: '100vh' },          
-          overflow: 'hidden',
-          mb: 2,
-        }}
-      >
-        <Box
-          component="img"
-          src={applyImage}
-          alt="Contact Us"
-          sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            padding: {xs:'1px',md:'20px'},
-
-            border: '2px solid transparent', // Added a solid border for consistency
-            borderRadius: '50px',
-          }}
-        />
-      </Box>
 
           <form>
           <Container maxWidth="xl" sx={{ mt: 5 ,mb:5}}>
@@ -277,8 +311,8 @@ const ApplyNow = () => {
                     { label: 'First Name', name: 'fName', icon: <Person /> },
                     { label: 'Last Name', name: 'lName', icon: <Person /> },
 
-                    { label: 'Gender', name: 'gender', icon: <Person />, type: 'select', options: ['M', 'F', 'Others'] },
-                    { label: 'PAN', name: 'pan', icon: <Public /> },
+                    { label: 'Gender', name: 'gender', icon: <Person />, type: 'select', options: ['M', 'F', 'Others'] ,isInput: true},
+                    { label: 'PAN', name: 'pan', icon: <Public /> , type: 'text' },
                     { label: 'Aadhaar', name: 'aadhaar', icon: <Public /> },
                     { label: 'Mobile', name: 'mobile', icon: <Phone /> },
                     { label: 'DOB', name: 'dob', icon: <CalendarToday />, type: 'date' },
@@ -317,8 +351,10 @@ const ApplyNow = () => {
           </MenuItem>
                     ))}
                 </TextField>
+                
               </Grid>
             ))}
+            
 
         <Grid
           item
@@ -441,6 +477,7 @@ const ApplyNow = () => {
               <Button
                 variant="contained"
                 type="submit"
+                onClick={handleSubmit}
                 sx={{ 
                   backgroundColor: '#444', // Light black color
                   padding: '4px', 

@@ -39,11 +39,11 @@ const TermsAndConditions = () => {
                     <Paper elevation={3} sx={{ borderRadius: '8px', overflow: 'hidden' ,  backgroundColor: 'transparent',  padding:{xs:1,md:8}}}>
                         <Box sx={{ transition: 'transform 0.3s ease-in-out', '&:hover': { transform: 'scale(1.05)' } }}>
                             <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
-                                Welcome to Salarysathi.com. By accessing and using this website or applying for any of our loan products, you agree to comply with the terms and conditions outlined here.
+                                Welcome to SalarySaathi By accessing and using this website or applying for any of our loan products, you agree to comply with the terms and conditions outlined here.
                             </Typography>
                             <Typography>
-                                These Terms and Conditions constitute a legal agreement between you and                     SHIVJI FINANCE & INVESTMENTS (P).LTD
-Limited (an NBFC registered with RBI for lending purposes), which governs your use of our website and services. Please read these terms carefully. If you do not agree with these terms, you should refrain from using this website or applying for loans through Salarysathi.com.
+                                These Terms and Conditions constitute a legal agreement between you and SHIVJI FINANCE & INVESTMENTS PVT LTD
+ (an NBFC registered with RBI for lending purposes), which governs your use of our website and services. Please read these terms carefully. If you do not agree with these terms, you should refrain from using this website or applying for loans through SalarySaathi
                             </Typography>
                         </Box>
                         <Divider sx={{ my: 2 }} />
@@ -53,8 +53,8 @@ Limited (an NBFC registered with RBI for lending purposes), which governs your u
                                 1. Introduction
                             </Typography>
                             <Typography>
-                                Salarysathi.com provides personal loans to salaried individuals under the regulatory oversight of                     SHIVJI FINANCE & INVESTMENTS (P).LTD
-Limited, an NBFC registered with the RBI. Our primary goal is to provide seamless, easy, and transparent financial solutions to help individuals manage their personal finances.
+                                SalarySaathi provides personal loans to salaried individuals under the regulatory oversight of                     SHIVJI FINANCE & INVESTMENTS PVT LTD
+, an NBFC registered with the RBI. Our primary goal is to provide seamless, easy, and transparent financial solutions to help individuals manage their personal finances.
                             </Typography>
                         </Box>
                         <Divider sx={{ my: 2 }} />
@@ -64,12 +64,12 @@ Limited, an NBFC registered with the RBI. Our primary goal is to provide seamles
                                 2. Eligibility Criteria
                             </Typography>
                             <Typography>
-                                To apply for a personal loan with Salarysathi.com, you must meet the following eligibility requirements:
+                                To apply for a personal loan with SalarySaathi, you must meet the following eligibility requirements:
                             </Typography>
                             <ul>
                                 <li>Be at least 21 years old and not older than 60 at the time of loan application.</li>
                                 <li>Be a salaried individual with steady income from a recognized organization.</li>
-                                <li>Meet the minimum monthly income criteria defined by                     SHIVJI FINANCE & INVESTMENTS (P).LTD
+                                <li>Meet the minimum monthly income criteria defined by     SHIVJI FINANCE & INVESTMENTS PVT LTD
 Limited.</li>
                                 <li>Be a resident of India with a satisfactory credit score and financial history.</li>
                             </ul>
@@ -81,8 +81,7 @@ Limited.</li>
                                 3. Loan Application Process
                             </Typography>
                             <Typography>
-                                The loan application process at Salarysathi.com includes registration, filling out the application form, document submission, and credit assessment. Approval of loans is at the sole discretion of                     SHIVJI FINANCE & INVESTMENTS (P).LTD
-Limited.
+                                The loan application process at SalarySaathi includes registration, filling out the application form, document submission, and credit assessment. Approval of loans is at the sole discretion of     SHIVJI FINANCE & INVESTMENTS PVT LTD.
                             </Typography>
                         </Box>
                         <Divider sx={{ my: 2 }} />
@@ -112,7 +111,7 @@ Limited.
                                 6. Loan Disbursement
                             </Typography>
                             <Typography>
-                                Upon approval of your loan application and completion of required formalities, the loan amount will be credited directly to your bank account. Disbursement times may vary depending on internal processes, but Salarysathi.com strives to ensure quick and efficient transfer of funds.
+                                Upon approval of your loan application and completion of required formalities, the loan amount will be credited directly to your bank account. Disbursement times may vary depending on internal processes, but SalarySaathi strives to ensure quick and efficient transfer of funds.
                             </Typography>
                         </Box>
                         <Divider sx={{ my: 2 }} />
@@ -192,8 +191,8 @@ Limited.
                                 14. Limitation of Liability
                             </Typography>
                             <Typography>
-                                                    SHIVJI FINANCE & INVESTMENTS (P).LTD
-Limited shall not be liable for any loss, damage, or inconvenience arising out of the use of this website or services, except as expressly stated in the loan agreement.
+                                                    SHIVJI FINANCE & INVESTMENTS PVT LTD
+ shall not be liable for any loss, damage, or inconvenience arising out of the use of this website or services, except as expressly stated in the loan agreement.
                             </Typography>
                         </Box>
                         <Divider sx={{ my: 2 }} />

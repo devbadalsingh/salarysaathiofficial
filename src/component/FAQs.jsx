@@ -69,13 +69,13 @@ const FAQs = () => {
                  {[
         {
             id: 'faq1',
-            question: '1. What is Salarysathi.com?',
-            answer: `Salarysathi.com is an online platform offering quick and hassle-free personal loans to salaried individuals. As part of                     SHIVJI FINANCE & INVESTMENTS (P).LTD
+            question: '1. What is SalarySaathi.com?',
+            answer: `SalarySaathi.com is an online platform offering quick and hassle-free personal loans to salaried individuals. As part of                     SHIVJI FINANCE & INVESTMENTS (P).LTD
 Limited (An RBI registered NBFC), we aim to provide accessible financial solutions to meet your personal needs, whether it's for emergencies, home improvement, or celebrations.`,
         },
         {
             id: 'faq2',
-            question: '2. Who is eligible to apply for a personal loan from Salarysathi.com?',
+            question: '2. Who is eligible to apply for a personal loan from SalarySaathi.com?',
             answer: `To be eligible for a personal loan, you must be:
             • A salaried individual
             • Aged between 21 and 60 years
@@ -93,12 +93,12 @@ Limited (An RBI registered NBFC), we aim to provide accessible financial solutio
         },
         {
             id: 'faq4',
-            question: '4. How much can I borrow from Salarysathi.com?',
-            answer: `Salarysathi.com offers personal loans ranging from ₹5,000 to ₹1,00,000 depending on your salary, repayment capacity, and credit score.`,
+            question: '4. How much can I borrow from SalarySaathi.com?',
+            answer: `SalarySaathi.com offers personal loans ranging from ₹5,000 to ₹1,00,000 depending on your salary, repayment capacity, and credit score.`,
         },
         {
             id: 'faq5',
-            question: '5. What is the interest rate on personal loans at Salarysathi.com?',
+            question: '5. What is the interest rate on personal loans at SalarySaathi.com?',
             answer: `The interest rate varies based on your credit profile, loan amount, and tenure. Typically, our rates are competitive and designed to be affordable for salaried individuals. Contact us to get a personalized quote.`,
         },
         {
@@ -109,11 +109,11 @@ Limited (An RBI registered NBFC), we aim to provide accessible financial solutio
         {
             id: 'faq7',
             question: '7. Can I repay my loan early?',
-            answer: `Yes, Salarysathi.com allows early repayment of loans. Please review your loan agreement or contact us for details.`,
+            answer: `Yes, SalarySaathi.com allows early repayment of loans. Please review your loan agreement or contact us for details.`,
         },
         {
             id: 'faq8',
-            question: '8. How does Salarysathi.com assess my creditworthiness?',
+            question: '8. How does SalarySaathi.com assess my creditworthiness?',
             answer: `We assess your loan eligibility based on factors such as your monthly income, credit score, job stability, and repayment history. A good credit score increases your chances of getting approved with a favorable interest rate.`,
         },
         {
@@ -123,13 +123,13 @@ Limited (An RBI registered NBFC), we aim to provide accessible financial solutio
         },
         {
             id: 'faq10',
-            question: '10. How do I repay my loan to Salarysathi.com?',
+            question: '10. How do I repay my loan to SalarySaathi.com?',
             answer: `You can repay your loan through various payment options such as NACH (National Automated Clearing House), direct debit, or online payments via our website.`,
         },
         {
             id: 'faq11',
-            question: '11. Is my personal and financial information safe with Salarysathi.com?',
-            answer: `Absolutely. Salarysathi.com uses advanced security measures, including encryption and secure servers, to ensure your personal and financial data is protected. We adhere to all data privacy regulations and take confidentiality seriously.`,
+            question: '11. Is my personal and financial information safe with SalarySaathi.com?',
+            answer: `Absolutely. SalarySaathi.com uses advanced security measures, including encryption and secure servers, to ensure your personal and financial data is protected. We adhere to all data privacy regulations and take confidentiality seriously.`,
         },
         {
             id: 'faq12',
@@ -139,7 +139,7 @@ Limited (An RBI registered NBFC), we aim to provide accessible financial solutio
         {
             id: 'faq13',
             question: '13. How can I contact customer support for further assistance?',
-            answer: `You can reach our customer support team through our website's contact form, by email at support@Salarysathi.com, or by calling our helpline during business hours. We're here to assist you with any questions or concerns.`,
+            answer: `You can reach our customer support team through our website's contact form, by email at support@SalarySaathi.com, or by calling our helpline during business hours. We're here to assist you with any questions or concerns.`,
         },
     ].map((faq, index) => (
                             <Accordion

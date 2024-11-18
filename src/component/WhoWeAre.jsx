@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import backgroundImage from '../assets/image/Frame 46.png'; // Adjust the path accordingly
 
 const WhoWeAre = () => {
-  const content = `Welcome to Salarysathi – where we redefine lending!
+  const content = `Welcome to SalarySaathi – where we redefine lending!
   We’re passionate innovators committed to making borrowing faster and easier.
   With us, you can get a loan disbursed in your account in just  5 minutes.`;
 
