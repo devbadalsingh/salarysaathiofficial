@@ -211,7 +211,7 @@ const ApplyNow = () => {
   
     // Proceed with form submission if there are no errors
     try {
-      const response = await fetch('https://api.fintechbasket.com/api/leads/', {
+      const response = await fetch('https://api.salarysaathi.com/api/leads', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
